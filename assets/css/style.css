@@ -220,3 +220,73 @@ html, body {
     transition: background-color 0.3s ease;
     
   }
+
+    /* Indice páginas - Section */
+
+    .contenedor-productos .indice-paginas {
+      grid-area: indice;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 0.5rem;
+      padding: 12px 0;
+      background-color: #F7F7F7;
+      height: 80px;
+      overflow: hidden;
+      box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.05);
+    }
+
+    .contenedor-productos .indice-paginas .page-item {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-width: 40px;
+      height: 40px;
+      padding: 4px 14px;
+      font-size: 1.1rem;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* modificado */
+      text-decoration: none;
+      color: blue; /* modificado */
+      border-radius: 4px;
+      box-shadow: rgba(99, 99, 99, 0.3) 0px 2px 8px 0px; /* verificar */
+      transition: all 0.3s ease;
+    }
+
+    .contenedor-productos .indice-paginas .page-item:hover {
+      box-shadow: rgba(99, 99, 99, 0.6) 0px 2px 8px 0px; /* verificar */
+      color: orangered;
+      font-weight: 500;
+    }
+
+     /* PIE DE PAGINA - FOOTER */
+
+     .pie-pagina {
+      grid-area: footer;
+      background-color: #000080;
+      padding: 15px 20px;
+      color: white; /* modificado */
+      height: 200px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+     }
+
+     .pie-pagina .pie-redes {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 2rem;    
+     }
+
+     .pie-pagina .pie-redes a {
+      font-size: 1.8rem;
+      margin-bottom: 12px;
+      color: whitesmoke; /* modificado */
+     }
+
+     .pie-pagina .pie-texto {
+      text-align: center;
+      color: #F7F7F7;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+     }
