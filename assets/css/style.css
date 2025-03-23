@@ -1,0 +1,135 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+
+  /* Grilla contenedor Principal */
+
+  .grid-contendor {
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 300px 1fr;
+    grid-template-rows: auto 1fr auto;
+    grid-template-areas: 
+    'aside header'
+    'aside section'
+    'footer section'
+    ;
+  }
+
+    /* Leftbar - aside */
+
+  .leftbar {
+    grid-area: aside;
+    -font-family: var(--font-family-secondary);
+    background-color: cornflowerblue;
+    -color: var(--font-primary-color);
+    padding: 20px 0;
+    -border: solid 2px blue;
+  }
+
+  .leftbar .leftbar-titulo {
+     
+    width: 100%;
+    text-align: center;
+    padding: 16px 20px;
+    font-size: 1.4rem;
+    font-weight: 500;
+    background: rgba(255, 255, 255, 0.2);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+
+  }
+
+  .leftbar .leftbar-titulo i {
+    margin-right: 8px;
+    font-size: 1.4rem;
+    
+  }
+
+  .leftbar .leftbar-menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    margin: 4rem;
+    font-size: 1.1rem;
+  }
+
+  .leftbar .leftbar-menu a {
+    -color: var(--font-primary-color);
+    font-weight: 600;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+
+  .leftbar .leftbar-menu a:hover {
+    -color: var(--font-menu-color);
+    text-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  }
+
+  .leftbar .leftbar-menu-hamburger {
+    font-size: 2rem;
+    display: none;
+  }
+
+  /* Encabezado - header */
+
+  .buscador {
+    grid-area: header;
+    background-color: gray;
+    box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+  }
+
+  .buscador .titulo-filtro {
+    font-family: var(--font-family-secondary);
+    font-size: 1rem;
+    text-align: center;
+    margin-top: 10px;   /* controla el margen superior del titulo */
+    margin-bottom: 10px;  /* controla el margen inferior del titulo */
+    font-weight: 400;
+    color: yellow;
+    letter-spacing: 0.5px;
+  }
+
+  .buscador .titulo-filtro i {
+    -color: var(--font-secondary-color);
+  }
+
+  .buscador .select-contenedor {
+    position: relative;
+    margin: 5px;
+  }
+
+  .buscador .select-contenedor .select-filtro {
+  width: 100%;
+  cursor: pointer;
+  outline: none;
+  padding: 10px 5px;
+  border: 1px solid blue;
+  border-radius: 10px;
+  background-color: white;
+  font-size: 16px;
+  color: #374151;
+  transition: border-color 0.2s, box-shadow 0.2s;
+  margin-bottom: 10px;   /* controla el margen inferior del select */
+ 
+
+  }
+
+  .buscador .select-contenedor .select-filtro:hover{
+    border-color: red;
+  }
+
+
+
+  /* Productos - Section */
