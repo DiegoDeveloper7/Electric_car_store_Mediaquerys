@@ -8,7 +8,7 @@ html, body {
     height: 100%;
     margin: 0;
     padding: 0;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: Georgia, 'Times New Roman', Times, serif;
   }
 
   /* Grilla contenedor Principal */
@@ -25,34 +25,31 @@ html, body {
     ;
   }
 
-    /* Leftbar - aside */
+    /* LEFTBAR - ASIDE */
 
   .leftbar {
     grid-area: aside;
-    -font-family: var(--font-family-secondary);
+    font-family: Georgia, 'Times New Roman', Times, serif;
     background-color: cornflowerblue;
-    -color: var(--font-primary-color);
+    color:#00FF00;
     padding: 20px 0;
-    -border: solid 2px blue;
   }
 
   .leftbar .leftbar-titulo {
-     
     width: 100%;
     text-align: center;
     padding: 16px 20px;
-    font-size: 1.4rem;
+    font-size: 1.5rem;
     font-weight: 500;
-    background: rgba(255, 255, 255, 0.2);
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
-    backdrop-filter: blur(5px);
-    -webkit-backdrop-filter: blur(5px);
-
+    background: rgba(0, 100, 0, 0.2);
+    box-shadow: 0 0 20px rgba(57, 255, 20, 0.8);
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
   }
 
   .leftbar .leftbar-titulo i {
     margin-right: 8px;
-    font-size: 1.4rem;
+    font-size: 1.5rem;
     
   }
 
@@ -60,21 +57,22 @@ html, body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 10px;
+    gap: 15px;
     margin: 4rem;
-    font-size: 1.1rem;
+    font-size: 1rem;
+    
   }
 
   .leftbar .leftbar-menu a {
-    -color: var(--font-primary-color);
+    color: #006400;
     font-weight: 600;
-    text-decoration: none;
+    text-decoration: underline;
     transition: color 0.3s ease;
   }
 
   .leftbar .leftbar-menu a:hover {
-    -color: var(--font-menu-color);
-    text-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    color: #00FF00 ;
+    box-shadow: rgba(144, 238, 144, 0.24) 0px 3px 8px;
   }
 
   .leftbar .leftbar-menu-hamburger {
@@ -82,27 +80,23 @@ html, body {
     display: none;
   }
 
-  /* Encabezado - header */
+  /* ENCABEZADO - HEADER */
 
   .buscador {
     grid-area: header;
-    background-color: gray;
+    background-color: #66C200;
     box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
   }
 
   .buscador .titulo-filtro {
-    font-family: var(--font-family-secondary);
+    font-family: Georgia, 'Times New Roman', Times, serif;
     font-size: 1rem;
     text-align: center;
     margin-top: 10px;   /* controla el margen superior del titulo */
     margin-bottom: 10px;  /* controla el margen inferior del titulo */
     font-weight: 400;
-    color: yellow;
+    color: #006400;
     letter-spacing: 0.5px;
-  }
-
-  .buscador .titulo-filtro i {
-    -color: var(--font-secondary-color);
   }
 
   .buscador .select-contenedor {
@@ -119,20 +113,19 @@ html, body {
   border-radius: 10px;
   background-color: white;
   font-size: 16px;
-  color: #374151;
+  color: #006400;
   transition: border-color 0.2s, box-shadow 0.2s;
   margin-bottom: 10px;   /* controla el margen inferior del select */
  
-
   }
 
   .buscador .select-contenedor .select-filtro:hover{
-    border-color: red;
+    border-color: #00FF00 ;
   }
 
 
 
-  /* Productos - Section */
+  /* PRODUCTOS - SECTION */
 
   .contenedor-productos {
     grid-area: section;
@@ -147,7 +140,7 @@ html, body {
 
   .contenedor-productos .carro-contenedor {
     grid-area: productos;
-    background-color: lightcoral;
+    background-color: #C0C0C0;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-auto-rows: min-content; /* Las filas se ajustan al contenido */
@@ -156,7 +149,6 @@ html, body {
     /* Generar Scroll */
     overflow-y: auto;
     scrollbar-width: thin;
-    -scrollbar-color: var(--background-color-primary) var(--font-menu-color);
   }
 
   .contenedor-productos .carro-contenedor .carro-tarjeta {
@@ -170,7 +162,7 @@ html, body {
   }
 
   .contenedor-productos .carro-contenedor:hover {
-    transform: translateY(-5px);  /* verificar */
+    transform: translateY(-5px);  
   }
 
   .contenedor-productos .carro-contenedor .carro-tarjeta img {
@@ -191,18 +183,17 @@ html, body {
   .contenedor-productos .carro-contenedor .carro-tarjeta .contenido-tarjeta h3 {
     font-size: 1.2rem;
     margin-bottom: 5px;
-    color: blueviolet; /* modificado */
+    color: #006400; 
   }
 
   .contenedor-productos .carro-contenedor .carro-tarjeta .contenido-tarjeta .precio {
-    -font-weight: bold;
     font-size: 1.3rem;
-    color: darkgreen;
+    color: #00FF00;
     margin-bottom: 0.5rem;
   }
 
   .contenedor-productos .carro-contenedor .carro-tarjeta .contenido-tarjeta .description {
-    color: blue; /* modificado */
+    color:  cornflowerblue; 
     font-size: 0.9rem;
     margin-bottom: 1rem;
     text-indent: 20px;
@@ -211,7 +202,7 @@ html, body {
 
   .contenedor-productos .carro-contenedor .carro-tarjeta .contenido-tarjeta .boton {
     background-color: green;
-    color: greenyellow; /* modificado */
+    color: greenyellow; 
     border: none;
     padding: 0.7rem 1.5rem;
     border-radius: 5px;
@@ -221,7 +212,12 @@ html, body {
     
   }
 
-    /* Indice páginas - Section */
+  .contenedor-productos .carro-contenedor .carro-tarjeta .contenido-tarjeta .boton:hover {
+    background-color: #00FF00;
+    color: #006400;
+  }
+
+    /* INDICE - PÁGINAS */
 
     .contenedor-productos .indice-paginas {
       grid-area: indice;
@@ -246,25 +242,24 @@ html, body {
       font-size: 1.1rem;
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* modificado */
       text-decoration: none;
-      color: blue; /* modificado */
+      color: #006400; 
       border-radius: 4px;
       box-shadow: rgba(99, 99, 99, 0.3) 0px 2px 8px 0px; /* verificar */
-      transition: all 0.3s ease;
     }
 
     .contenedor-productos .indice-paginas .page-item:hover {
-      box-shadow: rgba(99, 99, 99, 0.6) 0px 2px 8px 0px; /* verificar */
-      color: orangered;
-      font-weight: 500;
+      box-shadow: rgba(57, 255, 20, 0.3) 0px 2px 8px 0px; /* verificar */
+      color: #00FF00;
+      font-weight: 400;
     }
 
      /* PIE DE PAGINA - FOOTER */
 
      .pie-pagina {
       grid-area: footer;
-      background-color: #000080;
+      background-color: #66C200;
       padding: 15px 20px;
-      color: white; /* modificado */
+      color: #006400; /* modificado */
       height: 200px;
       display: flex;
       flex-direction: column;
@@ -280,14 +275,14 @@ html, body {
      }
 
      .pie-pagina .pie-redes a {
-      font-size: 1.8rem;
+      font-size: 1.5rem;
       margin-bottom: 12px;
-      color: whitesmoke; /* modificado */
+      color: #006400; /* modificado */
      }
 
      .pie-pagina .pie-texto {
       text-align: center;
-      color: #F7F7F7;
+      color: #006400;
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
      }
 
@@ -349,7 +344,7 @@ html, body {
 
   }
 
-  @media (min-width: 577px) and (max-width: 990px) {
+  @media (min-width: 577px) and (max-width: 991px) {
 
     .grid-contendor {
       grid-template-columns: 250px 1fr;
