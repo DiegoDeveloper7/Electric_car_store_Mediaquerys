@@ -163,6 +163,7 @@ html, body {
 
   .contenedor-productos .carro-contenedor:hover {
     transform: translateY(-5px);  
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.5);
   }
 
   .contenedor-productos .carro-contenedor .carro-tarjeta img {
@@ -226,7 +227,7 @@ html, body {
       align-items: center;
       gap: 0.5rem;
       padding: 12px 0;
-      background-color: #F7F7F7;
+      background-color: cornflowerblue;
       height: 80px;
       overflow: hidden;
       box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.05);
@@ -245,6 +246,7 @@ html, body {
       color: #006400; 
       border-radius: 4px;
       box-shadow: rgba(99, 99, 99, 0.3) 0px 2px 8px 0px; /* verificar */
+      background-color: whitesmoke;
     }
 
     .contenedor-productos .indice-paginas .page-item:hover {
@@ -260,7 +262,7 @@ html, body {
       background-color: #66C200;
       padding: 15px 20px;
       color: #006400; /* modificado */
-      height: 200px;
+      height: 160px;
       display: flex;
       flex-direction: column;
       justify-content: center;
@@ -286,7 +288,13 @@ html, body {
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
      }
 
-
+     .pie-pagina .pie-texto a {
+      text-decoration: none;
+      color: #006400;
+      font-weight: 600;
+      font-style: italic;
+      
+     }
 
   /* MEDIAS QUERIES  */
 
@@ -326,7 +334,7 @@ html, body {
       box-shadow: none;
       text-align: start;
       font-size: 1.5rem;
-      color: #000080;
+      color: #00FF00;
     }
 
    .contenedor-productos .carro-contenedor {
@@ -358,7 +366,6 @@ html, body {
 
     .leftbar {
       display: flex;
-      -flex-direction: column;
       align-items: center;
       padding: 0 36px;
     }
@@ -377,7 +384,6 @@ html, body {
     background: transparent;
     box-shadow: none;
     backdrop-filter: blur(0);
-    -webkit-backdrop-filter: blur(5px);
     text-align: start;
     font-size: 1rem;
     margin: 0;
